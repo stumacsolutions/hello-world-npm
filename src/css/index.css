@@ -11,31 +11,30 @@
   clear: both;
 }
 
-*{
+* {
   margin:0;
   padding:0;
   box-sizing:border-box;
 }
 
-body{
+body {
   font-family: sans-serif;
   background: var(--mainColor);
 }
 
-header{
+header {
   padding: 1em;
   color:white;
   background: var(--headerColor);
 
-  h1{
+  h1 {
     float:left;
     margin: 0;
     font-size:1.25rem;
   }
-
 }
 
-menu{
+menu {
   display:block;
   float:right;
 
@@ -57,17 +56,5 @@ menu{
     li.active{
       opacity: 1;
     }
-  }
-}
-
-.content{
-  padding: 1em;
-}
-
-itemlist{
-  display:block;
-
-  ul{
-    list-style: none;
   }
 }
