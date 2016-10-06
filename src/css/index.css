@@ -38,10 +38,10 @@ menu {
   display:block;
   float:right;
 
-  ul{
+  ul {
     list-style: none;
 
-    li{
+    li {
       float:left;
       margin-left:1em;
       cursor:pointer;
@@ -49,11 +49,11 @@ menu {
       opacity: .7
     }
 
-    li:hover{
+    li:hover {
       opacity: .5;
     }
 
-    li.active{
+    li.active {
       opacity: 1;
     }
   }
