@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/stumacsolutions/hello-world-npm#readme",
   "dependencies": {
+    "lodash": "^4.16.4",
     "normalize.css": "^5.0.0",
     "riot": "^2.6.2",
     "riotcontrol": "0.0.3"
