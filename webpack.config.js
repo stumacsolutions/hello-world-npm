@@ -26,15 +26,15 @@ module.exports = {
       { test: /\.tag$/, exclude: /node_modules/, loader: 'riotjs-loader', query: { type: 'es6' } }
     ],
     loaders: [
-      { test: /\.js|\.tag$/, exclude: /node_modules/, include: /src/, loader: 'babel-loader', query: {modules: 'common'} },
+      { test: /\.js|\.tag$/, exclude: /node_modules/, include: /src/, loader: 'babel-loader', query: { modules: 'common' } },
       { test: /\.css$/, loader: 'style-loader!css-loader!postcss-loader' }
     ]
   },
   postcss: [cssimport, cssnested, customProperties, autoprefixer, csswring],
   devServer: {
     contentBase: './build/',
-    port: 1337,
     hot: true,
-    inline: true
+    inline: true,
+    port: 1337
   }
 }
