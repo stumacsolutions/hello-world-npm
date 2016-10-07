@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm-run-all html bundle",
     "bundle": "webpack -p -d --progress --colors",
-    "clean": "del build -f",
+    "clean": "trash build",
     "dev": "npm-run-all html serve",
     "fix": "standard --fix",
     "html": "copyfiles -f src/index.html build",
@@ -45,6 +45,7 @@
     "riotjs-loader": "^3.0.0",
     "standard": "^8.3.0",
     "style-loader": "^0.13.1",
+    "trash-cli": "^1.4.0",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.2"
   }
