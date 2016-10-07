@@ -1,0 +1,11 @@
+header {
+  color: white;
+  background: var(--headerColor);
+  padding: 1em;
+
+  h1 {
+    float: left;
+    font-size: 1.25rem;
+    margin: 0;
+  }
+}

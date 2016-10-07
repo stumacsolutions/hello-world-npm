@@ -1,4 +1,6 @@
 @import '../../node_modules/normalize.css/normalize.css';
+@import 'header.css';
+@import 'menu.css';
 
 :root {
   --headerColor : #111;
@@ -6,55 +8,18 @@
 }
 
 .clearfix:after {
+  clear: both;
   content: "";
   display: table;
-  clear: both;
 }
 
 * {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: sans-serif;
   background: var(--mainColor);
-}
-
-header {
-  padding: 1em;
-  color:white;
-  background: var(--headerColor);
-
-  h1 {
-    float:left;
-    margin: 0;
-    font-size:1.25rem;
-  }
-}
-
-menu {
-  display:block;
-  float:right;
-
-  ul {
-    list-style: none;
-
-    li {
-      float:left;
-      margin-left:1em;
-      cursor:pointer;
-      user-select:none;
-      opacity: .7
-    }
-
-    li:hover {
-      opacity: .5;
-    }
-
-    li.active {
-      opacity: 1;
-    }
-  }
+  font-family: sans-serif;
 }
