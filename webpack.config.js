@@ -27,7 +27,8 @@ module.exports = {
     ],
     loaders: [
       { test: /\.js|\.tag$/, exclude: /node_modules/, include: /src/, loader: 'babel-loader', query: { modules: 'common' } },
-      { test: /\.css$/, loader: 'style-loader!css-loader!postcss-loader' }
+      { test: /\.css$/, loader: 'style-loader!css-loader!postcss-loader' },
+      { test: /\.scss$|\.sass$/, loader: 'style-loader!css-loader!sass-loader' }
     ]
   },
   postcss: [cssimport, cssnested, customProperties, autoprefixer, csswring],
